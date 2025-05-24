@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTrophy } from "react-icons/fa";
+import { FaTrophy ,FaStar ,FaStarHalfAlt  } from "react-icons/fa";
 import { PiTicket } from "react-icons/pi";
 
 
@@ -11,8 +11,8 @@ const Item = () => {
       <div>
         <div className="p-10 w-full h-screen bg-gradient-to-r from-white to-[#5d1dcc]">
           <div className="p-2 rounded-4xl shadow-2xs bg-gradient-to-r from-white to-[#5d1dcc]">
-            <div className="bg-white rounded-4xl mx-auto shadow-2xl flex justify-between w-250">
-              <div className="w-120 mx-auto">
+            <div className="bg-white rounded-4xl mx-auto shadow-2xl flex justify-between lg:w-250">
+              <div className="lg:w-120 mx-auto">
                 <img src="./headphone.png" alt="" />
               </div>
               <div className=" mt-20 ">
@@ -28,16 +28,23 @@ const Item = () => {
                 <h1 className="font-bold text-4xl mt-5 w-120">
                   Bose QuietComfort Bluetooth headphones- Chilled Lilac
                 </h1>
-                <div className="">
+                <div className="flex gap-4 mt-4 text-sm">
                     <p>187 sold this month</p>
                     <p>Free Shipping Available</p>
                 </div>
-                <div className="flex ">
+                <div className="flex mt-5">
                     <div className="">
-                        <h2>$735.27  <span>$648.58</span> </h2>
-                        <p>In Stock (12)</p>
-                        <div className="rating">
-
+                        <h2 className="text-2xl font-bold">$735.27  <span className="font-light text-base line-through">$648.58</span> </h2>
+                        <p className="text-[#79d8bd] font-bold mt-2 ">In-Stock (12)</p>
+                        <div className="flex gap-1 mt-2">
+                            <FaStar className="text-yellow-400" />
+                            <FaStar className="text-yellow-400" />
+                            <FaStar className="text-yellow-400" />
+                            <FaStar className="text-yellow-400" />
+                            <FaStarHalfAlt className="text-yellow-400"/>
+                        </div>
+                        <div className="w-20">
+                            <img src="./bose.png" alt="" />
                         </div>
                     </div>
                 </div>
