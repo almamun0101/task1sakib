@@ -7,7 +7,11 @@ import {
   FaPlus,
 } from "react-icons/fa";
 import { PiTicket } from "react-icons/pi";
-import { GoDotFill,GoDot  } from "react-icons/go";
+import { GoDotFill, GoDot } from "react-icons/go";
+import { SlOptionsVertical } from "react-icons/sl";
+import { MdFavoriteBorder } from "react-icons/md";
+import { IoShareSocialOutline } from "react-icons/io5"
+
 const Item = () => {
   return (
     <>
@@ -15,17 +19,29 @@ const Item = () => {
         <div class="size-24  bg-conic-180 from-indigo-600 via-indigo-500 to-indigo-600"></div> */}
       <div>
         <div className="min-h-screen bg-gradient-to-r from-white to-[#5d1dcc] flex items-center justify-center p-4">
-          <div className="w-full max-w-6xl p-2 rounded-[2rem] shadow-2xl bg-gradient-to-r from-white to-[#5d1dcc]">
-            <div className="bg-white rounded-[2rem] shadow-xl flex flex-col lg:flex-row overflow-hidden">
-              <div className="w-full lg:w-1/2 mx-auto flex flex-col items-center justify-center p-6">
-                <img src="./headphone.png" alt="" className="max-h-80" />
+          <div className="w-full  max-w-6xl p-2 rounded-[2rem] shadow-2xl bg-gradient-to-r from-white to-[#5d1dcc]">
+            <div className="bg-white py-5 rounded-[2rem] shadow-xl flex flex-col lg:flex-row overflow-hidden">
+              <div className="relative w-full lg:w-1/2 mx-auto flex flex-col items-center justify-center p-6">
+                <span className="border top-5  left-10 absolute border-gray-400 rounded-xl px-2   ">
+                  1/5
+                </span>
+                <span className=" top-5 right-10 absolute text-[#5d1dcc] rounded-full p-2 hover:bg-gray-400 hover:text-white">
+                  <SlOptionsVertical />
+                </span>
+                <img src="./headphone.png" alt="" className="max-h-100" />
+
+                <span className=" bottom-20 right-35 absolute text-white bg-gray-300 hover:bg-gray-400 p-2 rounded-full text-3xl">
+                  <IoShareSocialOutline />
+                </span>
+                <span className=" bottom-20 right-20 absolute text-white bg-gray-300 hover:bg-gray-400 p-2 rounded-full text-3xl">
+                  <MdFavoriteBorder />
+                </span>
+
                 <div className="flex gap-1 text-gray-300">
-                  
-                  <GoDotFill className="text-[#5d1dcc]"/>
+                  <GoDotFill className="text-[#5d1dcc]" />
                   <GoDotFill />
                   <GoDotFill />
                   <GoDotFill />
-                  
                 </div>
               </div>
               <div className="w-full lg:w-1/2 flex flex-col  justify-between p-6">
